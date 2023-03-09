@@ -11,7 +11,7 @@ const menu = [
     {
         id: 2,
         title: "steak",
-        category: 'breakfast',
+        category: 'lunch',
         price: 16.99,
         img: './images/my-2.jpg',
         remote_img: '',
@@ -20,7 +20,7 @@ const menu = [
     {
         id: 3,
         title: "salmon",
-        category: 'breakfast',
+        category: 'dinner',
         price: 12.79,
         img: './images/my-3.jpg',
         remote_img: '',
@@ -29,7 +29,7 @@ const menu = [
     {
         id: 4,
         title: "buttermilk pancakes",
-        category: 'breakfast',
+        category: 'dessert',
         price: 15.59,
         img: './images/item-1.jpeg',
         remote_img: '',
@@ -81,12 +81,6 @@ const displayMenuItems = (menu) => {
     sectionCenter.innerHTML = Menu;
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-    displayMenuItems(menu);
-    displayMenuButtons(buttons);
-});
-
-
 
 const buttons = ['all', ...new Set(menu.map((item) => item.category))];
 console.log(buttons);
@@ -103,3 +97,8 @@ const displayMenuButtons = (buttons) => {
     console.log('displayButtons after join', displayButton);
     btnContainer.innerHTML = displayButton;
 }
+
+window.addEventListener('DOMContentLoaded', () => {
+    displayMenuItems(menu);
+    displayMenuButtons(buttons);
+});
