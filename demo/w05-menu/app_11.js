@@ -20,9 +20,9 @@ const displayMenuItems = (menu) => {
         </article>
         `
     });
-    console.log('displayMenu before join', displayMenu);
+    // console.log('displayMenu before join', displayMenu);
     const Menu = displayMenu.join('');
-    console.log('displayMenu after join', Menu);
+    // console.log('displayMenu after join', Menu);
     sectionCenter.innerHTML = Menu;
 }
 
@@ -37,11 +37,31 @@ const displayMenuButtons = (buttons) => {
         `
     });
     
-    console.log('displayButtons before join', displayButtons);
+    // console.log('displayButtons before join', displayButtons);
     const displayButton = displayButtons.join('');
-    console.log('displayButtons after join', displayButton);
+    // console.log('displayButtons after join', displayButton);
     btnContainer.innerHTML = displayButton;
+
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    console.log('filterBtns',filterBtns);
+    filterBtns.forEach( (btn) => {
+      btn.addEventListener('click', (e) => {
+        console.log('data-id', e.currentTarget.dataset.id);
+        const category = e.currentTarget.dataset.id;
+        const filterMenu = menu.filter( (item) => item.category === category);
+        console.log('filterMenu',filterMenu);
+        if(category === 'all'){
+          console.log('all', menu)
+          displayMenuItems(menu);
+        }else{
+          displayMenuItems(filterMenu);
+        }
+      });
+    });
+
 }
+
+
 
 window.addEventListener('DOMContentLoaded', () => {
     displayMenuItems(menu);
