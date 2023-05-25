@@ -58,5 +58,9 @@ const showClassDemo = (week) => {
         case 'p3-3':
             showDemo.innerHTML = `<iframe src='./demo/w09-midprep/p3_tour_11/index.html' width="100%" height="100%"/>`
             break;
+
+        case 'w15':
+            showDemo.innerHTML = `<iframe src='./demo/w15-store-product/index.html' width="100%" height="100%"/>`
+            break;
     }
 }
