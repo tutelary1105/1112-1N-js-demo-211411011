@@ -3,6 +3,7 @@
 const url = './api/products.json'
 
 const pContainer = document.querySelector('.products-container')
+const companyBtns = document.querySelectorAll('.company-btn');
 
 let allProducts;
 let products;
@@ -40,6 +41,21 @@ const displayProducts = (products) => {
     // console.log('displayContent', displayContent);
     pContainer.innerHTML = displayContent;
 }
+
+companyBtns.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    const companyId = e.currentTarget.dataset.id;
+    console.log('companyId', companyId);
+    if(companyId === 'all'){
+      console.log(`all products`, allProducts);
+      displayProducts(allProducts);
+    }else{
+      products = allProducts.filter((p)=> p.fields.company === companyId);
+      console.log(`${companyId} products`, products);
+      displayProducts(products);
+    }
+  })
+});
 
 window.addEventListener('DOMContentLoaded', async() => {
     allProducts = await fetchData();
