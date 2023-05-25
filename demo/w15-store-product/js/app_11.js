@@ -40,6 +40,20 @@ const displayProducts = (products) => {
     pContainer.innerHTML = displayContent;
 }
 
+companyBtns.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      const companyId = e.currentTarget.dataset.id;
+      console.log('companyId', companyId);
+      if(companyId === 'all'){
+        console.log(`all products`, allProducts);
+        displayProducts(allProducts);
+      }else{
+        products = allProducts.filter((p)=> p.fields.company === companyId);
+        console.log(`${companyId} products`, products);
+        displayProducts(products);
+      }
+    })
+  });
 
 window.addEventListener('DOMContentLoaded', async() => {
     allProducts = await fetchData();
