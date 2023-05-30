@@ -1,5 +1,5 @@
 const apiUrl = 'https://api.openai.com/v1/chat/completions';
-const token = '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';
+const token = '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';
 
 const messages = [
     {
