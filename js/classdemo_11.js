@@ -58,9 +58,54 @@ const showClassDemo = (week) => {
         case 'p3-3':
             showDemo.innerHTML = `<iframe src='./demo/w09-midprep/p3_tour_11/index.html' width="100%" height="100%"/>`
             break;
-
+        case 'w11':
+            showDemo.innerHTML = `<iframe src='./demo/w11-midterm//index.html' width="100%" height="100%"/>`
+            break;
+        case 'w11-md':
+            showDemo.innerHTML = `<iframe src='./demo/md/w10/w10_11.html' width="100%" height="100%"/>`
+            break;
+        case 'w12':
+            showDemo.innerHTML = `<iframe src='./demo/w12-async/7-async-tutorials/index.html' width="100%" height="100%"/>`
+            break;
+        case 'w12-md':
+            showDemo.innerHTML = `<iframe src='./demo/md/w12/w12_11.html' width="100%" height="100%"/>`
+            break;
+        case 'w13':
+            showDemo.innerHTML = `<iframe src='./demo/w13-menu-api/index.html' width="100%" height="100%"/>`
+            break;
+        case 'w13-md':
+            showDemo.innerHTML = `<iframe src='./demo/md/w13/w13_11.html' width="100%" height="100%"/>`
+            break;
+        case 'w14':
+            showDemo.innerHTML = `<iframe src='./demo/w14-api-more/index.html' width="100%" height="100%"/>`
+            break;
+        case 'w14-md':
+            showDemo.innerHTML = `<iframe src='./demo/md/w14/w14_11.html' width="100%" height="100%"/>`
+            break;
         case 'w15':
             showDemo.innerHTML = `<iframe src='./demo/w15-store-product/index.html' width="100%" height="100%"/>`
+            break;
+        case 'w15-md':
+            showDemo.innerHTML = `<iframe src='./demo/md/w15/w15_11.html' width="100%" height="100%"/>`
+            break;
+
+        case 'api_11.md':
+            showDemo.innerHTML = `<iframe src='./demo/md/api_project/api_11.html' width="100%" height="100%"/>`
+            break;
+        case 'api_p1':
+            showDemo.innerHTML = `<iframe src='./demo/api_project/index.html' width="100%" height="100%"/>`
+            break;
+        case 'api_p2':
+            showDemo.innerHTML = `<iframe src='./demo/w15-store-product/index.html' width="100%" height="100%"/>`
+            break;
+        case 'api_p3':
+            showDemo.innerHTML = `<iframe src='./demo/w15-store-product/index.html' width="100%" height="100%"/>`
+            break;
+        case 'experience':
+            showDemo.innerHTML = `<iframe src='./demo/w15-store-product/index.html' width="100%" height="100%"/>`
+            break;
+        case 'api_project':
+            showDemo.innerHTML = `<iframe src='./demo/api_project/index.html' width="100%" height="100%"/>`
             break;
     }
 }

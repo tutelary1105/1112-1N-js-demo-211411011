@@ -1,13 +1,13 @@
 const btn = document.querySelector('.btn');
 
 btn.addEventListener('click', async () => {
-  const url = 'https://www.thesportsdb.com/api/v1/json/3/searchplayers.php?p=a';
+  const url = 'https://api.mojang.com/users/profiles/minecraft/jeb_';
 
   try {
     const response = await fetch(url);
     const data = await response.json();
-    console.log('data', data.player);
-    displayItems(data.player);
+    console.log('data', data.jeb_);
+    displayItems(data.jeb_);
   } catch (error) {
     console.error(error);
   }
