@@ -93,16 +93,16 @@ const showClassDemo = (week) => {
             showDemo.innerHTML = `<iframe src='./demo/md/api_project/api_11.html' width="100%" height="100%"/>`
             break;
         case 'api_p1':
-            showDemo.innerHTML = `<iframe src='./demo/api_project/index.html' width="100%" height="100%"/>`
+            showDemo.innerHTML = `<iframe src='./demo/api_project/p1/p1.txt' width="100%" height="100%"/>`
             break;
         case 'api_p2':
-            showDemo.innerHTML = `<iframe src='./demo/w15-store-product/index.html' width="100%" height="100%"/>`
+            showDemo.innerHTML = `<iframe src='./demo/api_project/p2/p2.txt' width="100%" height="100%"/>`
             break;
         case 'api_p3':
-            showDemo.innerHTML = `<iframe src='./demo/w15-store-product/index.html' width="100%" height="100%"/>`
+            showDemo.innerHTML = `<iframe src='./demo/api_project/p3/p3.txt' width="100%" height="100%"/>`
             break;
         case 'experience':
-            showDemo.innerHTML = `<iframe src='./demo/w15-store-product/index.html' width="100%" height="100%"/>`
+            showDemo.innerHTML = `<iframe src='./demo/api_project/experience/experience.txt' width="100%" height="100%"/>`
             break;
         case 'api_project':
             showDemo.innerHTML = `<iframe src='./demo/api_project/index.html' width="100%" height="100%"/>`
