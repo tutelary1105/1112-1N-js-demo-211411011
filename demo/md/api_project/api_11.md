@@ -27,12 +27,22 @@
 ![api-p3.png](https://izfkkkxjvqncdvyzzpkv.supabase.co/storage/v1/object/public/demo-11/md_1N_img/api-p3.png)
 
 ```
-
+0c58e92 tutelary1105    Wed May 31 06:59:31 2023 +0800  API-P3: API 完成進度
 ```
 
 ### API-P4: 心得甘苦談
 
-![api-p4.png](https://izfkkkxjvqncdvyzzpkv.supabase.co/storage/v1/object/public/demo-11/md_1N_img/api-p4.png)
+## 最大的兩個問題 ##
+
+## 一開始在製作不知道金鑰該如何取得 ##
+
+![api-p4-1.png](https://izfkkkxjvqncdvyzzpkv.supabase.co/storage/v1/object/public/demo-11/md_1N_img/api-p4-1.png)
+
+## 只要公開上傳後，OpenAI就會偵測，原本的金鑰就會被清除 ##
+
+![api-p4-2.png](https://izfkkkxjvqncdvyzzpkv.supabase.co/storage/v1/object/public/demo-11/md_1N_img/api-p4-2.png)
+
+![api-p4-3.png](https://izfkkkxjvqncdvyzzpkv.supabase.co/storage/v1/object/public/demo-11/md_1N_img/api-p4-3.png)
 
 ```
 
